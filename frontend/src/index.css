@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-container {
+    @apply items-center gap-2 p-2 flex w-full;
+  }
+  .input-field {
+    @apply text-lg pl-12  focus:border-2 focus:border-green-500 w-full p-2  rounded-md  bg-gray-900/60 border-2  outline-none;
+  }
+  .error-message {
+    @apply mt-1 text-[16px] text-[#f00] font-medium;
+  }
+  .main-btn {
+    @apply w-full mb-4 bg-gradient-to-r from-green-500 to-emerald-600 py-2 text-lg font-medium transition-all duration-200 rounded-md hover:from-green-600/60 hover:to-emerald-600/60;
+  }
+}
